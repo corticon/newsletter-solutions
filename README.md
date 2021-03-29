@@ -1,2 +1,2 @@
 # newsletter-solutions
-Solutions to the Corticon newsletter challenges.
+Welcome to the repository for the solutions to the Corticon newsletter challenges.
