@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="2" buildNumber="8017" updateStamp="_Hs0ycXz4EeuaIv7K0gp7_A" externalChecksum="7824986:201531363:2146616488">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_j53YUXzqEeuaIv7K0gp7_A" vocabulary="../../Vocabulary/Shellfish.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Oyster.SeasonEnd.toDateTime &lt;> null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.SeasonEnd.toDateTime &lt;> null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonEnd.toDateTime">
+                <parentTerm text="SeasonEnd" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonEnd">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Oyster.SeasonEnd.toDateTime" rhs="&lt;> null"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Oyster.DaysUntilSeasonEnds = Oyster.TestDate.daysBetween(Oyster.SeasonEnd.toDateTime)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.DaysUntilSeasonEnds = Oyster.TestDate.daysBetween ( Oyster.SeasonEnd.toDateTime )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DaysUntilSeasonEnds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonEnds">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Oyster.TestDate.daysBetween">
+                <parentTerm text="TestDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Oyster.TestDate">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonEnd.toDateTime">
+                <parentTerm text="SeasonEnd" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonEnd">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Oyster.SeasonStart &lt;> null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.SeasonStart &lt;> null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SeasonStart" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonStart">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Oyster.SeasonStart" rhs="&lt;> null"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Oyster.DaysUntilSeasonStarts = Oyster.TestDate.daysBetween(Oyster.SeasonStart.toDateTime)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.DaysUntilSeasonStarts = Oyster.TestDate.daysBetween ( Oyster.SeasonStart.toDateTime )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DaysUntilSeasonStarts" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonStarts">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Oyster.TestDate.daysBetween">
+                <parentTerm text="TestDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Oyster.TestDate">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonStart.toDateTime">
+                <parentTerm text="SeasonStart" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonStart">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The oyster eating season ends in {Oyster.DaysUntilSeasonEnds} days.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The oyster eating season ends in  + Oyster.DaysUntilSeasonEnds +  days." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="DaysUntilSeasonEnds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonEnds">
+              <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The oyster eating season doesn't start for another {Oyster.DaysUntilSeasonStarts} days.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The oyster eating season doesn't start for another  + Oyster.DaysUntilSeasonStarts +  days." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="DaysUntilSeasonStarts" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonStarts">
+              <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../../Vocabulary/Shellfish.ecore#//Oyster" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
+      <referencedAttributes attribute="../../Vocabulary/Shellfish.ecore#//Oyster/DaysUntilSeasonEnds"/>
+      <referencedAttributes attribute="../../Vocabulary/Shellfish.ecore#//Oyster/DaysUntilSeasonStarts"/>
+      <referencedAttributes attribute="../../Vocabulary/Shellfish.ecore#//Oyster/TestDate"/>
+      <referencedAttributes attribute="../../Vocabulary/Shellfish.ecore#//Oyster/SeasonEnd"/>
+      <referencedAttributes attribute="../../Vocabulary/Shellfish.ecore#//Oyster/Test1Date"/>
+      <referencedAttributes attribute="../../Vocabulary/Shellfish.ecore#//Oyster/SeasonStart"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="37" sashWeightConditionsIf="64">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="24">
+        <valueSetCell/>
+        <expressionCell external="Oyster.DaysUntilSeasonEnds = Oyster.TestDate.daysBetween(Oyster.SeasonEnd.toDateTime)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.DaysUntilSeasonEnds = Oyster.TestDate.daysBetween ( Oyster.SeasonEnd.toDateTime )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DaysUntilSeasonEnds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonEnds">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Oyster.TestDate.daysBetween">
+                <parentTerm text="TestDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Oyster.TestDate">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonEnd.toDateTime">
+                <parentTerm text="SeasonEnd" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonEnd">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="21">
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Oyster.DaysUntilSeasonStarts = Oyster.TestDate.daysBetween(Oyster.SeasonStart.toDateTime)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.DaysUntilSeasonStarts = Oyster.TestDate.daysBetween ( Oyster.SeasonStart.toDateTime )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DaysUntilSeasonStarts" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonStarts">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Oyster.TestDate.daysBetween">
+                <parentTerm text="TestDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Oyster.TestDate">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonStart.toDateTime">
+                <parentTerm text="SeasonStart" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonStart">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.5"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="763" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="The oyster eating season ends in {Oyster.DaysUntilSeasonEnds} days.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The oyster eating season ends in  + Oyster.DaysUntilSeasonEnds +  days." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="DaysUntilSeasonEnds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonEnds">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="The oyster eating season doesn't start for another {Oyster.DaysUntilSeasonStarts} days.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The oyster eating season doesn't start for another  + Oyster.DaysUntilSeasonStarts +  days." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="DaysUntilSeasonStarts" datatype="Integer" termtype="ATTRIBUTE" fulltext="Oyster.DaysUntilSeasonStarts">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Oyster.SeasonEnd.toDateTime">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.SeasonEnd.toDateTime" datatype="DateTime" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonEnd.toDateTime">
+                <parentTerm text="SeasonEnd" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonEnd">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Oyster.SeasonStart">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.SeasonStart" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SeasonStart" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonStart">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="&lt;> null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.SeasonEnd.toDateTime &lt;> null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="toDateTime" datatype="DateTime" termtype="METHOD" fulltext="Oyster.SeasonEnd.toDateTime">
+                <parentTerm text="SeasonEnd" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonEnd">
+                  <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="&lt;> null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Oyster.SeasonStart &lt;> null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SeasonStart" datatype="String" termtype="ATTRIBUTE" fulltext="Oyster.SeasonStart">
+                <parentTerm text="Oyster" datatype="Oyster" termtype="ENTITY" fulltext="Oyster" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
