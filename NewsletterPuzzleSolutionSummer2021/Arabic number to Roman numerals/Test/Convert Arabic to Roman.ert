@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="6" buildNumber="8017" updateStamp="_bX5YIMU0EeuP3ITBsD2pHg" externalChecksum="7824986:201531363">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="6" buildNumber="8017" updateStamp="_XWCFMsU0EeuP3ITBsD2pHg" externalChecksum="7824986:201531363">
+    <testsheet ruleActivityUpdateStamp="_EnFSwcU0EeuP3ITBsD2pHg" ruleActivity="../Ruleflows/Convert%20Arabic%20to%20Roman.erf#//@ruleflow" locale="">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2949" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/arabicNumber"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="40" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/tens"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/counterThousands"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="MMCMXLIX" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/romanNumeral"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="9" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/ones"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2949" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/arabicNumber"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="900" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/hundreds"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2000" eAttribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/thousands"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot passed="false"/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_2HgXscUbEeuP3ITBsD2pHg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Convert"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="6" buildNumber="8017" updateStamp="_4Vt7tMUbEeuP3ITBsD2pHg" externalChecksum="7824986:201531363:2146616488">
+  <languageCode>en_GB</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_2HgXscUbEeuP3ITBsD2pHg" vocabulary="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Number.counterThousands = Number.thousands /1000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands = Number.thousands / 1000" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="thousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.thousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral = 'M'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = 'M'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Number.counterThousands > 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands > 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.counterThousands" rhs="> 1"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.counterThousands -= 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands = Number.counterThousands - 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral +=  'M'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'M'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter precondition="true" logicalVariables="#//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Number.thousands > 0">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.thousands > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="thousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.thousands">
+              <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number" filters="#//@ruleset/@filters.0">
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/thousands"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/counterThousands"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/romanNumeral"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="17" sashWeightConditionsIf="38">
+    <actionSection rowCount="53" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.counterThousands = Number.thousands /1000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands = Number.thousands / 1000" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="thousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.thousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.counterThousands -= 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands = Number.counterThousands - 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.romanNumeral = 'M'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = 'M'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.romanNumeral +=  'M'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'M'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Number.thousands > 0" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Number.thousands > 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.thousands > 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="thousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.thousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.40923076923076923">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.counterThousands">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="> 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.counterThousands > 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="counterThousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.counterThousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

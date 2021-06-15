@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="6" buildNumber="8017" updateStamp="_BGIBYsUcEeuP3ITBsD2pHg" externalChecksum="7824986:201531363:2146616488">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_2HgXscUbEeuP3ITBsD2pHg" vocabulary="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Number.ones = Number.arabicNumber.mod(10)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = Number.arabicNumber.mod ( 10 )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.mod">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Number.tens = Number.arabicNumber.mod(100) - Number.ones">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = Number.arabicNumber.mod ( 100 ) - Number.ones" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.mod">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Number.hundreds = Number.arabicNumber.mod(1000)- Number.tens - Number.ones">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = Number.arabicNumber.mod ( 1000 ) - Number.tens - Number.ones" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.mod">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Number.thousands = Number.arabicNumber.div(1000) * 1000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.thousands = Number.arabicNumber.div ( 1000 ) * 1000" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="thousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.thousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="div" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.div">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number">
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/ones"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/arabicNumber"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/tens"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/hundreds"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/thousands"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightAdvancedView="15" sashWeightConditionsActions="29" sashWeightConditionsIf="48">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Number.ones = Number.arabicNumber.mod(10)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = Number.arabicNumber.mod ( 10 )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.mod">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.tens = Number.arabicNumber.mod(100) - Number.ones">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = Number.arabicNumber.mod ( 100 ) - Number.ones" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.mod">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.hundreds = Number.arabicNumber.mod(1000)- Number.tens - Number.ones">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = Number.arabicNumber.mod ( 1000 ) - Number.tens - Number.ones" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.mod">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.thousands = Number.arabicNumber.div(1000) * 1000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.thousands = Number.arabicNumber.div ( 1000 ) * 1000" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="thousands" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.thousands">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="div" datatype="Integer" termtype="METHOD" fulltext="Number.arabicNumber.div">
+                <parentTerm text="arabicNumber" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.arabicNumber">
+                  <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.8069053708439897"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

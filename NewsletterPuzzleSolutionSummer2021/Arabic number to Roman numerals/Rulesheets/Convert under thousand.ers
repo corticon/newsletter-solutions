@@ -1,0 +1,1931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="6" buildNumber="8017" updateStamp="_49k30sUZEeuP3ITBsD2pHg" externalChecksum="7824986:201531363:2146616488">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_2HgXscUbEeuP3ITBsD2pHg" vocabulary="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Number.romanNumeral = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.romanNumeral" rhs="null"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral = ''">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = ''" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 100">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 100" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="100"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'C'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'C'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 200">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 200" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="200"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'CC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 300">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 300" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="300"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'CCC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CCC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 400">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 400" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="400"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'CD'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CD'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 500">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 500" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="500"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'D'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'D'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 600">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 600" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="600"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'DC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'DC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 700">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 700" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="700"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'DCC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'DCC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 800">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 800" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="800"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'DCCC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'DCCC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.hundreds = 900">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 900" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.hundreds" rhs="900"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'CM'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CM'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="10"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'X'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'X'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 20">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 20" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="20"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'XX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="30"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'XXX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XXX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 40">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 40" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="40"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'XL'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XL'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 50">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 50" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="50"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'L'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="60"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'LX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'LX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 70">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 70" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="70"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'LXX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'LXX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 80">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 80" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="80"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'LXXX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'LXXX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.tens = 90">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 90" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.tens" rhs="90"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'XC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="1"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'I'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'I'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="2"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'II'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'II'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="3"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'III'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'III'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="4"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'IV'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'IV'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="5"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'V'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'V'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 6">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 6" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="6"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'VI'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'VI'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="7"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'VII'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'VII'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 8">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 8" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="8"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'VIII'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'VIII'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Number.ones = 9">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 9" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Number.ones" rhs="9"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Number.romanNumeral += 'IX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'IX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number">
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/hundreds"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/romanNumeral"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/tens"/>
+      <referencedAttributes attribute="../Vocaulary/Arabic%20to%20Roman%20conversion.ecore#//Number/ones"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsIf="22">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.romanNumeral">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Number.romanNumeral += cellValue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + cellValue" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="true">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="51" columnWidthFactor="0.875">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.romanNumeral">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.hundreds">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.tens">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Number.ones">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="31">
+      <ruleColumnList ruleId="0" columnWidth="15" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="39" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="''">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = ''" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="33" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="100">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 100" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'C'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'C'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="40" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="200">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 200" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'CC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="45" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="300">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 300" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'CCC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CCC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="35" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="400">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 400" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'CD'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CD'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="38" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="500">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 500" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'D'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'D'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="34" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="600">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 600" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'DC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'DC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="50" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="700">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 700" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'DCC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'DCC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="9" columnWidth="54" pRule="#//@ruleset/@rules.9">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="800">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 800" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'DCCC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'DCCC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="10" columnWidth="37" pRule="#//@ruleset/@rules.10">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="900">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.hundreds = 900" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hundreds" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.hundreds">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'CM'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'CM'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="11" columnWidth="31" pRule="#//@ruleset/@rules.11">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'X'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'X'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="12" columnWidth="37" pRule="#//@ruleset/@rules.12">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="20">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 20" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'XX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="13" columnWidth="45" pRule="#//@ruleset/@rules.13">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'XXX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XXX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="14" columnWidth="35" pRule="#//@ruleset/@rules.14">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="40">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 40" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'XL'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XL'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="15" columnWidth="28" pRule="#//@ruleset/@rules.15">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="50">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 50" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'L'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="16" columnWidth="34" pRule="#//@ruleset/@rules.16">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'LX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'LX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="17" columnWidth="40" pRule="#//@ruleset/@rules.17">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="70">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 70" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'LXX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'LXX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="18" columnWidth="54" pRule="#//@ruleset/@rules.18">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="80">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 80" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'LXXX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'LXXX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="19" columnWidth="33" pRule="#//@ruleset/@rules.19">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="90">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.tens = 90" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="tens" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.tens">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'XC'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'XC'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="20" columnWidth="38" pRule="#//@ruleset/@rules.20">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'I'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'I'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="21" columnWidth="28" pRule="#//@ruleset/@rules.21">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'II'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'II'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="22" columnWidth="30" pRule="#//@ruleset/@rules.22">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'III'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'III'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="23" columnWidth="34" pRule="#//@ruleset/@rules.23">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'IV'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'IV'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="24" columnWidth="28" pRule="#//@ruleset/@rules.24">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'V'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'V'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="25" columnWidth="34" pRule="#//@ruleset/@rules.25">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="6">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 6" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'VI'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'VI'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="26" columnWidth="38" pRule="#//@ruleset/@rules.26">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'VII'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'VII'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="27" columnWidth="38" pRule="#//@ruleset/@rules.27">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="8">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 8" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'VIII'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'VIII'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="28" columnWidth="39" pRule="#//@ruleset/@rules.28">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="9">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.ones = 9" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ones" datatype="Integer" termtype="ATTRIBUTE" fulltext="Number.ones">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'IX'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Number.romanNumeral = Number.romanNumeral + 'IX'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="romanNumeral" datatype="String" termtype="ATTRIBUTE" fulltext="Number.romanNumeral">
+                <parentTerm text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+              </terms>
+              <terms text="Number" datatype="Number" termtype="ENTITY" fulltext="Number"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
