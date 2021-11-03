@@ -1,1 +1,2 @@
-This folder contains the solution to the March 2021 newsletter challenge.
+This folder contains an example puzzle part of the first 
+March 2021 newsletter but it was not a challenge.
