@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="2" minorServiceNumber="6" buildNumber="8017" updateStamp="_PbYq40MMEeyPj6u0MixSbA" externalChecksum="7824986:201531363:2146616488" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_1Lmc8UJKEeyt4r4q-nIadQ" vocabulary="race.ecore#/">
+    <rule>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 1 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=2]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 2 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=3]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 3 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=4]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 4 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=5]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 5 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=6]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 6 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Person.new[place=7]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 7 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.0/@actions.0 #//@ruleset/@rules.0/@actions.1 #//@ruleset/@rules.0/@actions.2 #//@ruleset/@rules.0/@actions.3 #//@ruleset/@rules.0/@actions.4 #//@ruleset/@rules.0/@actions.5 #//@ruleset/@rules.0/@actions.6">
+      <text expression="Create instance of person in places 1 thru 7">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Create instance of person in places 1 thru 7" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="race.ecore#//Person">
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="17">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=1]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 1 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=2]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 2 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=3]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 3 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=4]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 4 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=5]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 5 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=6]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 6 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Person.new[place=7]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Person.new [ Person.place = 7 ]" datatype="Person" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Person.place">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Person" termtype="NEW" fulltext="Person.new">
+                <parentTerm text="Person" datatype="Person" termtype="ENTITY" fulltext="Person" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="279" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="{A0, B0, C0, D0, E0, F0, G0}"/>
+        <text external="Create instance of person in places 1 thru 7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Create instance of person in places 1 thru 7" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

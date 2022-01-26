@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="3" minorServiceNumber="3" buildNumber="8017" updateStamp="_HaQIg37BEeyRssaNuFFqUw" externalChecksum="7824986:201531363:2146616488" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CUbEEOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.0/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Tom].</textVariables>
+    <locationVariables>a</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CVCIEOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.4/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Harry].</textVariables>
+    <locationVariables>e</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CWQQEOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.7/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Jenny].</textVariables>
+    <locationVariables>h</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CWQQUOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.9/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Mary].</textVariables>
+    <locationVariables>j</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CXeYEOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.12/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Jenny].</textVariables>
+    <locationVariables>m</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CYFcEOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.15/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Bill].</textVariables>
+    <locationVariables>p</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_5CYsgEOjEeyDTb-QRQ0RHw" key="1" type="Validation" severity="Error" demoted="true" invalidObjects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.19/@expressionCell" textKey="RulesheetTableModelAPIImpl.Validation.InvalidConditionExpression" locationKey="RulesheetTableModelAPIImpl.Validation.Location.Condition">
+    <textVariables>Unrecognized expression: Invalid Operator or Unexpected characters starting from [Jim].</textVariables>
+    <locationVariables>t</locationVariables>
+  </validationMessages>
+  <comments timestamp="2022-01-26T16:54:00.865+0100" username="hverlee" text="Seven runners enter a race. The following rules describe the race results:&#xD;&#xA;&#xD;&#xA;1.    Tom finished before Harry, Dick, and Mary&#xD;&#xA;2.    Harry and Jenny finished before Dick&#xD;&#xA;3.    Jenny finished after Harry&#xD;&#xA;4.    Mary finished before Harry and Jim&#xD;&#xA;5.    Jenny and Harry finished after Jim&#xD;&#xA;6.    Bill finished before Harry, Jenny, and Tom&#xD;&#xA;7.    Jim and Mary finished before Dick and Harry" objects="#//@rulesheetViewList.0/@conditionSection/@conditionItemList.0" type="Note" ruleSheetSelectionType="Condition" ruleSheetSelectionReference="1,1,0,0,0,0"/>
+  <ruleset vocabularyUpdateStamp="_1Lmc8UJKEeyt4r4q-nIadQ" vocabulary="race.ecore#/">
+    <rule>
+      <condition disabled="true"/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition disabled="true"/>
+      <condition/>
+      <condition/>
+      <condition disabled="true"/>
+      <condition/>
+      <condition disabled="true"/>
+      <condition/>
+      <condition/>
+      <condition disabled="true"/>
+      <condition/>
+      <condition/>
+      <condition disabled="true"/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition disabled="true"/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Tom.place &lt; Harry.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Tom.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Tom.place &lt; Harry.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Tom.place &lt; Dick.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Tom.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Tom.place &lt; Dick.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Tom.place &lt; Mary.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Tom.place &lt; Mary.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Tom.place &lt; Mary.place" rhs="T"/>
+      </condition>
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Harry.place &lt; Dick.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Harry.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Harry.place &lt; Dick.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Jenny.place &lt; Dick.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jenny.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Jenny.place &lt; Dick.place" rhs="T"/>
+      </condition>
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Jenny.place > Harry.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jenny.place > Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Jenny.place > Harry.place" rhs="T"/>
+      </condition>
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Mary.place &lt; Harry.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Mary.place &lt; Harry.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Mary.place &lt; Jim.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Jim.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Mary.place &lt; Jim.place" rhs="T"/>
+      </condition>
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Jenny.place > Jim.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jenny.place > Jim.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Jenny.place > Jim.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Harry.place > Jim.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Harry.place > Jim.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Harry.place > Jim.place" rhs="T"/>
+      </condition>
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Bill.place &lt; Harry.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Bill.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Bill.place &lt; Harry.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Bill.place &lt; Jenny.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Bill.place &lt; Jenny.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Bill.place &lt; Jenny.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Bill.place &lt; Tom.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Bill.place &lt; Tom.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Bill.place &lt; Tom.place" rhs="T"/>
+      </condition>
+      <condition disabled="true"/>
+      <condition>
+        <opaqueExpression expression="(Jim.place &lt; Dick.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jim.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Jim.place &lt; Dick.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Jim.place &lt; Harry.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jim.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Jim.place &lt; Harry.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Mary.place &lt; Dick.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Mary.place &lt; Dick.place" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Mary.place &lt; Harry.place)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Mary.place &lt; Harry.place" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Bill.name = 'Bill'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Bill.name = 'Bill'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Bill.name">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Tom.name = 'Tom'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tom.name = 'Tom'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Tom.name">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Mary.name = 'Mary'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mary.name = 'Mary'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Mary.name">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Jenny.name = 'Jenny'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jenny.name = 'Jenny'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Jenny.name">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Harry.name = 'Harry'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Harry.name = 'Harry'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Harry.name">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Jim.name = 'Jim'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jim.name = 'Jim'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Jim.name">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Dick.name = 'Dick'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Dick.name = 'Dick'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Dick.name">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.5">
+      <text expression="Race result: Tom finished [{Tom.place}], Dick finished [{Dick.place}], Harry finished [{Harry.place}], Jenny finished [{Jenny.place}], Mary finished [{Mary.place}], Bill finished [{Bill.place}] and Jim finished [{Jim.place}].">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Race result: Tom finished [ + Tom.place + ], Dick finished [ + Dick.place + ], Harry finished [ + Harry.place + ], Jenny finished [ + Jenny.place + ], Mary finished [ + Mary.place + ], Bill finished [ + Bill.place + ] and Jim finished [ + Jim.place + ]." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+              <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+            </terms>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+              <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+              <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+              <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+              <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+            </terms>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+              <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+            </terms>
+            <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+              <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement/>
+    <ruleStatement>
+      <text expression="Requirements: Seven runners enter a race. The following rules describe the race results:">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Requirements: Seven runners enter a race. The following rules describe the race results:" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement/>
+    <ruleStatement>
+      <text expression="1.    Tom finished before Harry, Dick, and Mary">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1.    Tom finished before Harry, Dick, and Mary" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement>
+      <text expression="2.    Harry and Jenny finished before Dick">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="2.    Harry and Jenny finished before Dick" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement>
+      <text expression="3.    Jenny finished after Harry">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="3.    Jenny finished after Harry" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement>
+      <text expression="4.    Mary finished before Harry and Jim">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="4.    Mary finished before Harry and Jim" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement>
+      <text expression="5.    Jenny and Harry finished after Jim">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="5.    Jenny and Harry finished after Jim" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement>
+      <text expression="6.    Bill finished before Harry, Jenny, and Tom">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="6.    Bill finished before Harry, Jenny, and Tom" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement>
+      <text expression="7.    Jim and Mary finished before Dick and Harry">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="7.    Jim and Mary finished before Dick and Harry" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="race.ecore#//Person">
+      <alias value="Tom"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="race.ecore#//Person">
+      <alias value="Harry"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="race.ecore#//Person">
+      <alias value="Dick"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="race.ecore#//Person">
+      <alias value="Mary"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="race.ecore#//Person">
+      <alias value="Jim"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="race.ecore#//Person" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="Bill"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="race.ecore#//Person">
+      <alias value="Jenny"/>
+      <referencedAttributes attribute="race.ecore#//Person/name"/>
+      <referencedAttributes attribute="race.ecore#//Person/place"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="22" sashWeightConditionsActions="63" sashWeightConditionsIf="28">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Bill.name = 'Bill'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Bill.name = 'Bill'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Bill.name">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Tom.name = 'Tom'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tom.name = 'Tom'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Tom.name">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Mary.name = 'Mary'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mary.name = 'Mary'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Mary.name">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jenny.name = 'Jenny'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jenny.name = 'Jenny'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Jenny.name">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Harry.name = 'Harry'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Harry.name = 'Harry'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Harry.name">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jim.name = 'Jim'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jim.name = 'Jim'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Jim.name">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Dick.name = 'Dick'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Dick.name = 'Dick'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Dick.name">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.4">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.5">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.6">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.6/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.6/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50" scrollRowTop="12"/>
+    <ruleStatementSection rowCount="51" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="45" columnWidthID="50" columnWidthText="582" columnWidthRuleName="45" columnWidthRuleLink="30" columnWidthSourceName="22" columnWidthSourceLink="24" columnWidthCategory="35" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="68" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Race result: Tom finished [{Tom.place}], Dick finished [{Dick.place}], Harry finished [{Harry.place}], Jenny finished [{Jenny.place}], Mary finished [{Mary.place}], Bill finished [{Bill.place}] and Jim finished [{Jim.place}].">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Race result: Tom finished [ + Tom.place + ], Dick finished [ + Dick.place + ], Harry finished [ + Harry.place + ], Jenny finished [ + Jenny.place + ], Mary finished [ + Mary.place + ], Bill finished [ + Bill.place + ] and Jim finished [ + Jim.place + ]." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference/>
+        <text/>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference/>
+        <text external="Requirements: Seven runners enter a race. The following rules describe the race results:">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Requirements: Seven runners enter a race. The following rules describe the race results:" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference/>
+        <text/>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference/>
+        <text external="1.    Tom finished before Harry, Dick, and Mary">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="1.    Tom finished before Harry, Dick, and Mary" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference/>
+        <text external="2.    Harry and Jenny finished before Dick">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="2.    Harry and Jenny finished before Dick" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference/>
+        <text external="3.    Jenny finished after Harry">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="3.    Jenny finished after Harry" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference/>
+        <text external="4.    Mary finished before Harry and Jim">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="4.    Mary finished before Harry and Jim" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.8">
+        <reference/>
+        <text external="5.    Jenny and Harry finished after Jim">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="5.    Jenny and Harry finished after Jim" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.9">
+        <reference/>
+        <text external="6.    Bill finished before Harry, Jenny, and Tom">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="6.    Bill finished before Harry, Jenny, and Tom" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.10">
+        <reference/>
+        <text external="7.    Jim and Mary finished before Dick and Harry">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="7.    Jim and Mary finished before Dick and Harry" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="57" columnWidthFactor="0.5">
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.0" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Tom]." external="1.    Tom finished before Harry, Dick, and Mary"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Tom.place &lt; Harry.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tom.place &lt; Harry.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Tom.place &lt; Dick.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tom.place &lt; Dick.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Tom.place &lt; Mary.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Tom.place &lt; Mary.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.1" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Harry]." external="2.    Harry and Jenny finished before Dick"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Harry.place &lt; Dick.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Harry.place &lt; Dick.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jenny.place &lt; Dick.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jenny.place &lt; Dick.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.2" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Jenny]." external="3.    Jenny finished after Harry"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jenny.place > Harry.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jenny.place > Harry.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.3" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Mary]." external="4.    Mary finished before Harry and Jim"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Mary.place &lt; Harry.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mary.place &lt; Harry.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Mary.place &lt; Jim.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mary.place &lt; Jim.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.4" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Jenny]." external="5.    Jenny and Harry finished after Jim"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jenny.place > Jim.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jenny.place > Jim.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Harry.place > Jim.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Harry.place > Jim.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.5" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Bill]." external="6.    Bill finished before Harry, Jenny, and Tom"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Bill.place &lt; Harry.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Bill.place &lt; Harry.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Bill.place &lt; Jenny.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Bill.place &lt; Jenny.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Bill.place &lt; Tom.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Bill.place &lt; Tom.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList disabled="true">
+        <valueSetCell/>
+        <expressionCell validationMessages="#//@validationMessages.6" tooltip="Unrecognized expression: Invalid Operator or Unexpected characters starting from [Jim]." external="7.    Jim and Mary finished before Dick and Harry"/>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jim.place &lt; Dick.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jim.place &lt; Dick.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jim.place &lt; Harry.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jim.place &lt; Harry.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Mary.place &lt; Dick.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mary.place &lt; Dick.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Mary.place &lt; Harry.place">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mary.place &lt; Harry.place" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="19" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Tom.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Tom.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Tom.place &lt; Mary.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Harry.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jenny.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jenny.place > Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Jim.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jenny.place > Jim.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Harry.place > Jim.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Bill.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Bill.place &lt; Jenny.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jenny.place">
+                <parentTerm text="Jenny" datatype="Person" termtype="ENTITY" fulltext="Jenny" variable="#//@ruleset/@logicalVariables.6"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Bill.place &lt; Tom.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Tom.place">
+                <parentTerm text="Tom" datatype="Person" termtype="ENTITY" fulltext="Tom" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Bill.place">
+                <parentTerm text="Bill" datatype="Person" termtype="ENTITY" fulltext="Bill" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jim.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Jim.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jim.place">
+                <parentTerm text="Jim" datatype="Person" termtype="ENTITY" fulltext="Jim" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Dick.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Dick.place">
+                <parentTerm text="Dick" datatype="Person" termtype="ENTITY" fulltext="Dick" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Mary.place &lt; Harry.place ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Harry.place">
+                <parentTerm text="Harry" datatype="Person" termtype="ENTITY" fulltext="Harry" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="place" datatype="Integer" termtype="ATTRIBUTE" fulltext="Mary.place">
+                <parentTerm text="Mary" datatype="Person" termtype="ENTITY" fulltext="Mary" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

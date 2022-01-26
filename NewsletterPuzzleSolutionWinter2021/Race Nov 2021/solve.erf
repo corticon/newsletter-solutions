@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="6" minorVersionNumber="1" majorServiceNumber="3" minorServiceNumber="3" buildNumber="8017" updateStamp="_75qkwn7BEeyRssaNuFFqUw" externalChecksum="7824986:201531363:2146616488" rulesheetAssets="initialize.ers#/ race.ers#/" studioType="Java">
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_75qkwH7BEeyRssaNuFFqUw" key="7" type="Validation" severity="Warning" invalidObjects="#//@ruleflowViewList.0/@flowShapeList.1" textKey="RuleflowModelAPIImpl.Validation.InvalidRulesheetAsset"/>
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_1Lmc8UJKEeyt4r4q-nIadQ" vocabulary="race.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="initialize" order="1" ruleActivityUpdateStamp="_PbYq40MMEeyPj6u0MixSbA" nextStep="#//@ruleflow/@flowControlList.1" invokes="initialize.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="race" order="2" ruleActivityUpdateStamp="_HaQIg37BEeyRssaNuFFqUw" invokes="race.ers#//@ruleset"/>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="48" y="66" width="205" height="61" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" validationMessages="#//@validationMessages.0" x="291" y="65" width="205" height="61" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>
