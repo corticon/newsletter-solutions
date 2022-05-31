@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" buildNumber="8020" updateStamp="_R4iMgMSiEey-eP35-VInHg" externalChecksum="2722078124:201531363" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" buildNumber="8020" updateStamp="_QY8pEMSiEey-eP35-VInHg" externalChecksum="2722078124:201531363">
+    <testsheet ruleActivityUpdateStamp="_2fKBksSWEey-eP35-VInHg" ruleActivity="../Rulesheets/Rank%20children%20-%20multiple%20aliases.ers#//@ruleset" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="[1] Mary born on 2011/07/25 is older than Sue born on 2008/12/05. Increase rank of Mary with 1."/>
+        <PostedMessage severity="Info" text="[1] Ellen born on 2015/09/03 is older than Sue born on 2008/12/05. Increase rank of Ellen with 1."/>
+        <PostedMessage severity="Info" text="[1] Mary born on 2011/07/25 is older than Tony born on 2005/01/23. Increase rank of Mary with 1."/>
+        <PostedMessage severity="Info" text="[1] Ellen born on 2015/09/03 is older than Tony born on 2005/01/23. Increase rank of Ellen with 1."/>
+        <PostedMessage severity="Info" text="[1] Sue born on 2008/12/05 is older than Tony born on 2005/01/23. Increase rank of Sue with 1."/>
+        <PostedMessage severity="Info" text="[1] Ellen born on 2015/09/03 is older than Mary born on 2011/07/25. Increase rank of Ellen with 1."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2005/01/23" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tony" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2011/07/25" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mary" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008/12/05" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sue" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ellen" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tony" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2005/01/23" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mary" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2011/07/25" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008/12/05" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ellen" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" buildNumber="8020" updateStamp="_QY9QIMSiEey-eP35-VInHg" externalChecksum="2722078124:201531363">
+    <testsheet ruleActivityUpdateStamp="_2Ol8YMSeEey-eP35-VInHg" ruleActivity="../Rulesheets/Rank%20children%20-%20sorted%20aliases.ers#//@ruleset" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Tony born on 2005/01/23 received rank 1."/>
+        <PostedMessage severity="Info" text="Sue born on 2008/12/05 received rank 2."/>
+        <PostedMessage severity="Info" text="Mary born on 2011/07/25 received rank 3."/>
+        <PostedMessage severity="Info" text="Joan born on 2015/09/03 received rank 4."/>
+        <PostedMessage severity="Info" text="Ellen born on 2015/09/03 received rank 5."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2005/01/23" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tony" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2011/07/25" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mary" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008/12/05" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sue" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ellen" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/counter"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Joan" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="6" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/counter"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tony" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2005/01/23" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mary" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2011/07/25" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008/12/05" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ellen" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Joan" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" buildNumber="8020" updateStamp="_MXX0ksSjEey-eP35-VInHg" externalChecksum="2722078124:201531363">
+    <testsheet ruleActivityUpdateStamp="__H6RAcSfEey-eP35-VInHg" ruleActivity="../Rulesheets/Ranking%20children%20-%20looping.ers#//@ruleset" locale="">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2005/01/23" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tony" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2011/07/25" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mary" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2008/12/05" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sue" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ellen" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/counter"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tony" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2005/01/23" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mary" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2011/07/25" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2008/12/05" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Ellen" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2015/09/03" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/dateOfBirth"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/ranking"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" buildNumber="8020" updateStamp="_2NVbUcSiEey-eP35-VInHg" externalChecksum="2722078124:201531363">
+    <testsheet ruleActivityUpdateStamp="_HKTIMcSiEey-eP35-VInHg" ruleActivity="../Rulesheets/Rank%20children%20-%20unique%20index.ers#//@ruleset" locale="">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/counter"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/RankingAndSorting.ecore#//Family">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Smith" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/lastName"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Family/counter"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/uniqueIndex"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/uniqueIndex"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/uniqueIndex"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="../Vocabulary/RankingAndSorting.ecore#//Family/child" eClass="../Vocabulary/RankingAndSorting.ecore#//Child">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="../Vocabulary/RankingAndSorting.ecore#//Child/uniqueIndex"/>
+          </children>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_-QRU0MSTEeyncJzpKDos5Q" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet" vocabulary="../Vocabulary/RankingAndSorting.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Multiple aliases"/>
+    <testTabList name="Sorted aliases"/>
+    <testTabList name="Looping"/>
+    <testTabList name="Unique index"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

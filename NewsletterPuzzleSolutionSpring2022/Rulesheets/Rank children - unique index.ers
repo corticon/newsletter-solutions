@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" buildNumber="8020" updateStamp="_HKTIMcSiEey-eP35-VInHg" externalChecksum="2722078124:201531363:494732188" studioType="Java">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_-QRU0MSTEeyncJzpKDos5Q" vocabulary="../Vocabulary/RankingAndSorting.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Children.uniqueIndex = Family.counter ; Family.counter += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:ExpressionList">
+            <Expression text="Children.uniqueIndex = Family.counter" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+              <modifiedTermList>
+                <terms text="uniqueIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Children.uniqueIndex">
+                  <parentTerm text="Children" datatype="Child" termtype="ENTITY" fulltext="Children" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </terms>
+              </modifiedTermList>
+              <referencedTermList>
+                <terms text="Children" datatype="Child" termtype="ENTITY" fulltext="Children" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+                <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Family.counter">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+              </referencedTermList>
+            </Expression>
+            <Expression text="Family.counter = Family.counter + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+              <modifiedTermList>
+                <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Family.counter">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+              </modifiedTermList>
+              <referencedTermList>
+                <terms text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Family.counter">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+              </referencedTermList>
+            </Expression>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../Vocabulary/RankingAndSorting.ecore#//Family">
+      <extension explicit="true" association="true" entity="../Vocabulary/RankingAndSorting.ecore#//Child" traversedAssocRole="../Vocabulary/RankingAndSorting.ecore#//Family/child">
+        <alias value="Children"/>
+        <referencedAttributes attribute="../Vocabulary/RankingAndSorting.ecore#//Child/uniqueIndex"/>
+      </extension>
+      <referencedAttributes attribute="../Vocabulary/RankingAndSorting.ecore#//Family/counter"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="21" sashWeightScope="52" sashWeightConditionsActions="54" sashWeightConditionsIf="39">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Children.uniqueIndex = Family.counter ; Family.counter += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:ExpressionList">
+            <Expression text="Children.uniqueIndex = Family.counter" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+              <modifiedTermList>
+                <terms text="uniqueIndex" datatype="Integer" termtype="ATTRIBUTE" fulltext="Children.uniqueIndex">
+                  <parentTerm text="Children" datatype="Child" termtype="ENTITY" fulltext="Children" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </terms>
+              </modifiedTermList>
+              <referencedTermList>
+                <terms text="Children" datatype="Child" termtype="ENTITY" fulltext="Children" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+                <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Family.counter">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+              </referencedTermList>
+            </Expression>
+            <Expression text="Family.counter = Family.counter + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+              <modifiedTermList>
+                <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Family.counter">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+              </modifiedTermList>
+              <referencedTermList>
+                <terms text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                <terms text="counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="Family.counter">
+                  <parentTerm text="Family" datatype="Family" termtype="ENTITY" fulltext="Family" variable="#//@ruleset/@logicalVariables.0"/>
+                </terms>
+              </referencedTermList>
+            </Expression>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
