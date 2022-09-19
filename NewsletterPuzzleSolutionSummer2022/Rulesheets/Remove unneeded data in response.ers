@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" minorServiceNumber="1" buildNumber="8020" updateStamp="_Q9kBtjgUEe28_Z4lOIZePw" externalChecksum="2722078124:201531363:1939068443" studioType="Java">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_RiAh0DW_Ee2eFP8bVIuwAw" vocabulary="../Vocabulary/Postage.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Possibility.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Possibility.remove">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Solution.IsLowestExcess = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.IsLowestExcess = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="IsLowestExcess" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Solution.IsLowestExcess">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Solution.IsLowestExcess" rhs="null"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Solution.Type = 'excess'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.Type = 'excess'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Solution.Type" rhs="'excess'"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Solution.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Solution.remove">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//Possibility"/>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//Solution">
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Solution/IsLowestExcess"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Solution/Type"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="53" sashWeightConditionsIf="39">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Possibility.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Possibility.remove">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Solution.remove">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.remove" datatype="Object" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="remove" termtype="METHOD" fulltext="Solution.remove">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0"/>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Solution.IsLowestExcess">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.IsLowestExcess" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="IsLowestExcess" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Solution.IsLowestExcess">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Solution.Type">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.Type" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.IsLowestExcess = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="IsLowestExcess" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Solution.IsLowestExcess">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="'excess'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.Type = 'excess'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

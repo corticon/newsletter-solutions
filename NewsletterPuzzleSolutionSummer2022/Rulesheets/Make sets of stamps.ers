@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" minorServiceNumber="1" buildNumber="8020" updateStamp="_teqYwDgWEe28_Z4lOIZePw" externalChecksum="2722078124:201531363:1939068443" studioType="Java">
+  <languageCode>en_GB</languageCode>
+  <ruleset operationMode="ProcessAllLogicalLoops" vocabularyUpdateStamp="_RiAh0DW_Ee2eFP8bVIuwAw" vocabulary="../Vocabulary/Postage.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="StampBook.Value = 0.45">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value = 0.45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="StampBook.Value" rhs="0.45"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(StampBook.Counter &lt;= StampBook.Quantity)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( StampBook.Counter &lt;= StampBook.Quantity ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="StampBook.Counter &lt;= StampBook.Quantity" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Possibility.new[Value = StampBook.Value, Index = StampBook.Counter]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.new [ Possibility.Value = StampBook.Value , Possibility.Index = StampBook.Counter ]" datatype="Possibility" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.Value">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Possibility.Index">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="new" datatype="Possibility" termtype="NEW" fulltext="Possibility.new">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="StampBook.Counter += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Counter = StampBook.Counter + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="StampBook.Value = 0.25">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value = 0.25" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="StampBook.Value" rhs="0.25"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(StampBook.Counter &lt;= StampBook.Quantity)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( StampBook.Counter &lt;= StampBook.Quantity ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="StampBook.Counter &lt;= StampBook.Quantity" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Possibility.new[Value = StampBook.Value, Index = StampBook.Counter]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.new [ Possibility.Value = StampBook.Value , Possibility.Index = StampBook.Counter ]" datatype="Possibility" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.Value">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Possibility.Index">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="new" datatype="Possibility" termtype="NEW" fulltext="Possibility.new">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="StampBook.Counter += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Counter = StampBook.Counter + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="StampBook.Value = 0.10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value = 0.10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="StampBook.Value" rhs="0.10"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(StampBook.Counter &lt;= StampBook.Quantity)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( StampBook.Counter &lt;= StampBook.Quantity ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="StampBook.Counter &lt;= StampBook.Quantity" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Possibility.new[Value = StampBook.Value, Index = StampBook.Counter]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.new [ Possibility.Value = StampBook.Value , Possibility.Index = StampBook.Counter ]" datatype="Possibility" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.Value">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Possibility.Index">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="new" datatype="Possibility" termtype="NEW" fulltext="Possibility.new">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="StampBook.Counter += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Counter = StampBook.Counter + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement>
+      <text expression="**** Create possibilities for the number of stamps of a particular value up to the number of stamps we defined in the input. Rules are self-triggered with a defined (loop) exit condition ****">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="**** Create possibilities for the number of stamps of a particular value up to the number of stamps we defined in the input. Rules are self-triggered with a defined (loop) exit condition ****" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//Possibility">
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Value"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Index"/>
+    </logicalVariable>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//StampBook">
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//StampBook/Value"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//StampBook/Counter"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//StampBook/Quantity"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="26" sashWeightConditionsIf="33">
+    <actionSection rowCount="51" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Possibility.new[Value = StampBook.Value, Index = StampBook.Counter]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.new [ Possibility.Value = StampBook.Value , Possibility.Index = StampBook.Counter ]" datatype="Possibility" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.Value">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Possibility.Index">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="new" datatype="Possibility" termtype="NEW" fulltext="Possibility.new">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="StampBook.Counter += 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Counter = StampBook.Counter + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="37" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference/>
+        <text external="**** Create possibilities for the number of stamps of a particular value up to the number of stamps we defined in the input. Rules are self-triggered with a defined (loop) exit condition ****">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="**** Create possibilities for the number of stamps of a particular value up to the number of stamps we defined in the input. Rules are self-triggered with a defined (loop) exit condition ****" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="StampBook.Value">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="StampBook.Counter &lt;= StampBook.Quantity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Counter &lt;= StampBook.Quantity" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="38" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="0.45">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value = 0.45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( StampBook.Counter &lt;= StampBook.Quantity ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="0.25">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value = 0.25" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( StampBook.Counter &lt;= StampBook.Quantity ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="0.10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="StampBook.Value = 0.10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="StampBook.Value">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( StampBook.Counter &lt;= StampBook.Quantity ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Counter" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Counter">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="StampBook.Quantity">
+                <parentTerm text="StampBook" datatype="StampBook" termtype="ENTITY" fulltext="StampBook" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

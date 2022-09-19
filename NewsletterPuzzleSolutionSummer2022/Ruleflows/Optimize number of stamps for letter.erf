@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="6" minorVersionNumber="3" minorServiceNumber="1" buildNumber="8020" updateStamp="_tHMl4DgUEe28_Z4lOIZePw" externalChecksum="2722078124:201531363:1939068443" studioType="Java" rulesheetAssets="../Rulesheets/Intitialize%20stamps%20optimization.ers#/ ../Rulesheets/Make%20sets%20of%20stamps.ers#/ ../Rulesheets/Assemble%20optimal%20number%20of%20stamps.ers#/ ../Rulesheets/Rank%20next%20best%20solution.ers#/ ../Rulesheets/Remove%20unneeded%20data%20in%20response.ers#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_RiAh0DW_Ee2eFP8bVIuwAw" vocabulary="../Vocabulary/Postage.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Intitialize stamps optimization" order="1" ruleActivityUpdateStamp="_wG-JszgUEe28_Z4lOIZePw" nextStep="#//@ruleflow/@flowControlList.1" invokes="../Rulesheets/Intitialize%20stamps%20optimization.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Make sets of stamps" order="2" ruleActivityUpdateStamp="_teqYwDgWEe28_Z4lOIZePw" nextStep="#//@ruleflow/@flowControlList.2" invokes="../Rulesheets/Make%20sets%20of%20stamps.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Assemble optimal number of stamps" order="3" ruleActivityUpdateStamp="_ylwq4zgVEe28_Z4lOIZePw" nextStep="#//@ruleflow/@flowControlList.3" invokes="../Rulesheets/Assemble%20optimal%20number%20of%20stamps.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Rank next best solution" order="4" ruleActivityUpdateStamp="_2D93IjgVEe28_Z4lOIZePw" nextStep="#//@ruleflow/@flowControlList.4" invokes="../Rulesheets/Rank%20next%20best%20solution.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Remove unneeded data in response" order="5" ruleActivityUpdateStamp="_Q9kBtjgUEe28_Z4lOIZePw" invokes="../Rulesheets/Remove%20unneeded%20data%20in%20response.ers#//@ruleset"/>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="30" width="221" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="85" width="221" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="140" width="221" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.2">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="195" width="221" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.3">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="250" width="221" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" activityNode="#//@ruleflow/@flowControlList.4">
+      <annotations name="Color" value="8454143"/>
+    </flowShapeList>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.2" targetShape="#//@ruleflowViewList.0/@flowShapeList.3"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.3" targetShape="#//@ruleflowViewList.0/@flowShapeList.4"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

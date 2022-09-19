@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" minorServiceNumber="1" buildNumber="8020" updateStamp="_ylwq4zgVEe28_Z4lOIZePw" externalChecksum="2722078124:201531363:1939068443" studioType="Java">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_RiAh0DW_Ee2eFP8bVIuwAw" vocabulary="../Vocabulary/Postage.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Possibility.SubTotal = Possibility.Value * Possibility.Index">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.SubTotal = Possibility.Value * Possibility.Index" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.SubTotal">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.Value">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Possibility.Index">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="p10.SubTotal + p25.SubTotal + p45.SubTotal = Letter.PostageDue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.SubTotal + p25.SubTotal + p45.SubTotal = Letter.PostageDue" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.SubTotal">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.SubTotal">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+                <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.SubTotal">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="p10.SubTotal + p25.SubTotal + p45.SubTotal" rhs="Letter.PostageDue"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Solution.new[Quantity10 = p10.Index, Quantity25 = p25.Index, Quantity45 = p45.Index, Type = 'exact']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.new [ Solution.Type = 'exact' , Solution.Quantity45 = p45.Index , Solution.Quantity25 = p25.Index , Solution.Quantity10 = p10.Index ]" datatype="Solution" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Quantity25" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity25">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Quantity45" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity45">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Quantity10" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity10">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Solution" termtype="NEW" fulltext="Solution.new">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="p10.SubTotal + p25.SubTotal + p45.SubTotal > Letter.PostageDue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.SubTotal + p25.SubTotal + p45.SubTotal > Letter.PostageDue" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.SubTotal">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.SubTotal">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+                <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.SubTotal">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="p10.SubTotal + p25.SubTotal + p45.SubTotal" rhs="> Letter.PostageDue"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Solution.new[Quantity10 = p10.Index, Quantity25 = p25.Index, Quantity45 = p45.Index, Type = 'excess']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.new [ Solution.Type = 'excess' , Solution.Quantity45 = p45.Index , Solution.Quantity25 = p25.Index , Solution.Quantity10 = p10.Index ]" datatype="Solution" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Quantity25" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity25">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Quantity45" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity45">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Quantity10" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity10">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Solution" termtype="NEW" fulltext="Solution.new">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1">
+      <opaqueExpression expression="p10.Value = 0.10">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.Value = 0.10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.Value">
+              <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.2">
+      <opaqueExpression expression="p25.Value = 0.25">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p25.Value = 0.25" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.Value">
+              <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.3">
+      <opaqueExpression expression="p45.Value = 0.45">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p45.Value = 0.45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.Value">
+              <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.4">
+      <text expression="Exact required postage [{Letter.PostageDue}] = [{p10.Index}] x 10c + [{p25.Index}] x 25c + [{p45.Index}] x 45c.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Exact required postage [ + Letter.PostageDue + ] = [ + p10.Index + ] x 10c + [ + p25.Index + ] x 25c + [ + p45.Index + ] x 45c." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+              <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+            </terms>
+            <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+              <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+            </terms>
+            <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+              <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+            <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+              <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.4">
+      <text expression="Exceeds required postage [{Letter.PostageDue}] &lt;  [{p10.Index}] x 10c + [{p25.Index}] x 25c + [{p45.Index}] x 45c.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Exceeds required postage [ + Letter.PostageDue + ] &lt;  [ + p10.Index + ] x 10c + [ + p25.Index + ] x 25c + [ + p45.Index + ] x 45c." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+              <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+            </terms>
+            <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+              <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+            </terms>
+            <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+              <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+            </terms>
+            <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+              <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//Possibility">
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/SubTotal"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Value"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Index"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="../Vocabulary/Postage.ecore#//Possibility" filters="#//@ruleset/@filters.0">
+      <alias value="p10"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/SubTotal"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Value"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Index"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="../Vocabulary/Postage.ecore#//Possibility" filters="#//@ruleset/@filters.1">
+      <alias value="p25"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/SubTotal"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Value"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Index"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="../Vocabulary/Postage.ecore#//Possibility" filters="#//@ruleset/@filters.2">
+      <alias value="p45"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/SubTotal"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Value"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Possibility/Index"/>
+    </logicalVariable>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//Letter" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Letter/PostageDue"/>
+    </logicalVariable>
+    <logicalVariable entity="../Vocabulary/Postage.ecore#//Solution">
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Solution/Quantity10"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Solution/Quantity25"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Solution/Type"/>
+      <referencedAttributes attribute="../Vocabulary/Postage.ecore#//Solution/Quantity45"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="15" sashWeightConditionsIf="65">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="22">
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Possibility.SubTotal = Possibility.Value * Possibility.Index">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Possibility.SubTotal = Possibility.Value * Possibility.Index" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.SubTotal">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Possibility.Value">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="Possibility.Index">
+                <parentTerm text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Possibility" datatype="Possibility" termtype="ENTITY" fulltext="Possibility" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="21">
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Solution.new[Quantity10 = p10.Index, Quantity25 = p25.Index, Quantity45 = p45.Index, Type = cellValue]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.new [ Solution.Type = cellValue , Solution.Quantity45 = p45.Index , Solution.Quantity25 = p25.Index , Solution.Quantity10 = p10.Index ]" datatype="Solution" expressiontype="EXPRESSION" enumeration="false" cellValue="true">
+            <modifiedTermList>
+              <terms text="Quantity25" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity25">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Quantity45" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity45">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Quantity10" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity10">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Solution" termtype="NEW" fulltext="Solution.new">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution" variable="#//@ruleset/@logicalVariables.5"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p10.Value = 0.10" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p25.Value = 0.25" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="p45.Value = 0.45" filter="#//@ruleset/@filters.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.4">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.4/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.5">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.5/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="49">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="p10.Value = 0.10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.Value = 0.10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.Value">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="p25.Value = 0.25">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p25.Value = 0.25" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.Value">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.2">
+        <expressionCell external="p45.Value = 0.45">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p45.Value = 0.45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="Value" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.Value">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="645" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Exact required postage [{Letter.PostageDue}] = [{p10.Index}] x 10c + [{p25.Index}] x 25c + [{p45.Index}] x 45c.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Exact required postage [ + Letter.PostageDue + ] = [ + p10.Index + ] x 10c + [ + p25.Index + ] x 25c + [ + p45.Index + ] x 45c." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+                <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Exceeds required postage [{Letter.PostageDue}] &lt;  [{p10.Index}] x 10c + [{p25.Index}] x 25c + [{p45.Index}] x 45c.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Exceeds required postage [ + Letter.PostageDue + ] &lt;  [ + p10.Index + ] x 10c + [ + p25.Index + ] x 25c + [ + p45.Index + ] x 45c." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+                <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.8066528066528067">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="p10.SubTotal + p25.SubTotal + p45.SubTotal">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.SubTotal + p25.SubTotal + p45.SubTotal" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.SubTotal">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.SubTotal">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.SubTotal">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="19">
+      <ruleColumnList ruleId="0" columnWidth="28" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="119" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="Letter.PostageDue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.SubTotal + p25.SubTotal + p45.SubTotal = Letter.PostageDue" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.SubTotal">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.SubTotal">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+                <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.SubTotal">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'exact'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.new [ Solution.Type = 'exact' , Solution.Quantity45 = p45.Index , Solution.Quantity25 = p25.Index , Solution.Quantity10 = p10.Index ]" datatype="Solution" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Quantity25" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity25">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Quantity45" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity45">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Quantity10" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity10">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Solution" termtype="NEW" fulltext="Solution.new">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="127" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="> Letter.PostageDue">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="p10.SubTotal + p25.SubTotal + p45.SubTotal > Letter.PostageDue" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p25.SubTotal">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p45.SubTotal">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="PostageDue" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Letter.PostageDue">
+                <parentTerm text="Letter" datatype="Letter" termtype="ENTITY" fulltext="Letter" variable="#//@ruleset/@logicalVariables.4"/>
+              </terms>
+              <terms text="SubTotal" datatype="Decimal" termtype="ATTRIBUTE" fulltext="p10.SubTotal">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="'excess'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Solution.new [ Solution.Type = 'excess' , Solution.Quantity45 = p45.Index , Solution.Quantity25 = p25.Index , Solution.Quantity10 = p10.Index ]" datatype="Solution" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="Quantity25" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity25">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Quantity45" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity45">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Quantity10" datatype="Integer" termtype="ATTRIBUTE" fulltext="Solution.Quantity10">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Type" datatype="String" termtype="ATTRIBUTE" fulltext="Solution.Type">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="new" datatype="Solution" termtype="NEW" fulltext="Solution.new">
+                <parentTerm text="Solution" datatype="Solution" termtype="ENTITY" fulltext="Solution"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p45.Index">
+                <parentTerm text="p45" datatype="Possibility" termtype="ENTITY" fulltext="p45"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p25.Index">
+                <parentTerm text="p25" datatype="Possibility" termtype="ENTITY" fulltext="p25"/>
+              </terms>
+              <terms text="Index" datatype="Integer" termtype="ATTRIBUTE" fulltext="p10.Index">
+                <parentTerm text="p10" datatype="Possibility" termtype="ENTITY" fulltext="p10"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
